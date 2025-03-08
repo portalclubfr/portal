@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>PORTAL CLUB</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <!-- Sum chattable stuff  -->
+    <script src="https://iframe.chat/scripts/main.min.js"></script>
+    
+    <style>
+       img {
+        max-width:100%;
+       }
+    </style>
+    
+    
+  </head>
+  <body>
+  <!-- Top bar        -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="/music.html">Music</a> </li>  <!--110 40 -->
+        <li><a href="/links.html">Links</a> </li>  
+      </ul>
+    </nav>
+          
+      <div class="title-container">
+      <h1 class="pc-title">PORTAL CLUB</h1>
+      <h1 class="pc-katakana">ポータルクラブ</h1>
+      </div>
+
+      <div style="min-height: 900px;"></div>
+
+
+      <!-- chat -->
+       <div class="chat">
+      <iframe src="https://www3.cbox.ws/box/?boxid=3544769&boxtag=S6C3ab" width="430px" height="550" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+       </div>
+        
+      <!-- Audio -->
+      <audio id="background-music" controls autoplay loop> 
+           <source src="https://files.catbox.moe/ejudm5.mp3" type="audio/mp3">
+      </audio>
+      
+      <script>
+        var audio = document.getElementById('background-music');
+        audio.volume = 0.4; // (0.5 is 50%)
+      </script> 
+
+  </body>
+</html>

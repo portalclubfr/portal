@@ -1,0 +1,296 @@
+/* --------------------fr and fs------------------------- */
+
+@font-face {
+    font-family: 'VHS';
+    src: url('/fonts/HomeVideo-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #121212;
+    background-image: url('/img/backgrounds/background.gif');
+    background-repeat: repeat;
+   /* background-position: center;*/
+   /* background-attachment: fixed; */
+    background-size: 200px 135px;
+    color: #e0e0e0;
+    font-family: VHS, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start; 
+    height: 100vh;
+    text-align: center;
+    position: relative; 
+    
+    
+    overflow-x: hidden;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5%; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Portal Club title*/
+.pc-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0; /* Remove default margin */
+}
+
+.pc-katakana {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 5px; /* Adjust spacing */
+}
+
+/* Links */
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+a:hover {
+    color: #cf93ff;
+}
+
+/* Buttons */
+button {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #333;
+}
+
+/* Card Styling */
+.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header/Footer */
+header, footer {
+    background-color: #181818;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Centering the Title */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Centering the Links */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #333; /* Example background */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Space between items */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    font-size: 28px;
+    font-family: VHS, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+  
+.current-page-title h1{
+    position: absolute;
+    top: -11px; /* Positioning at the top */
+    left: 10px; /* Position at the left */
+    margin-right: 20px;
+    font-size: 28px;
+    text-shadow: red 2px 5px;
+    
+    
+}
+/* Align logos in a line */
+.logo-links{
+    display: flex;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Perfect centering */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+
+/* ---------------------- audio----------------------- */
+audio {
+    width: 300px; 
+    height: 40px; 
+    position: fixed; /* Fixed position to top-right */
+    bottom: 20px;
+    right: 20px;
+    background-color: #2c2c2c; /* Dark grey background */
+    border-radius: 12px; 
+    border: 1px solid #444;
+    padding: 5px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Controls */
+audio::-webkit-media-controls-panel {
+    background-color: #333; 
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #555; 
+    border-radius: 50%;
+    padding: 8px;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    background-color: #666; 
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #e0e0e0; /* text color */
+    font-family: VHS, sans-serif;
+    font-size: 14px; 
+    padding: 0px 6px; 
+}
+
+audio::-webkit-media-controls-timeline {
+    height: 2px;
+    padding: 10px 10px;
+    border-radius: 4px; 
+    transition: background 0.3s ease;
+}
+
+audio::-webkit-media-controls-timeline::-webkit-slider-thumb {
+    background-color: #e0e0e0; 
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    
+
+    border-radius: 6px; 
+    height: 4px;
+    margin-top: 4px;
+}
+
+audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #555;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+audio::-webkit-media-controls-mute-button:hover {
+    background-color: #666; /* Slight hover effect */
+}
+
+
+/* --------------------------------------------- */
+
+.album-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    position: relative;
+}
+
+.album-cover {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+/* Rotate on hover */
+.box:hover .album-cover {
+    transform: rotateY(180deg);
+}
+
+
+.box a {
+    display: flex;                    
+    flex-direction: column;           
+    text-decoration: none; 
+    align-items: center;              
+}
+
+
+.album-text {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    font-family: VHS, sans-serif;
+    text-align: center;
+}
+
+.chat{
+    position:fixed;
+    margin:30px;
+    bottom: 20px;
+    left: 0px;
+    opacity: 80%;
+}
